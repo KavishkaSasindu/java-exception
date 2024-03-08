@@ -1,9 +1,15 @@
 package org.example;
-import java.util.ArrayList;
 
-
-public class Main {
-    public static void main(String[] args) {
-        ArrayList<Integer> list = new ArrayList<Integer>();
+public class Main{
+    public static void main(String[] args){
+        try{
+            System.out.println("stat try");
+            int x  = 10/0;
+            System.out.println("end try");
+        }catch(Exception e){
+            System.out.println("start catch");
+            e.printStackTrace();
+            System.out.println("end catch");
+        }
     }
 }
